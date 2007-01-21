@@ -27,7 +27,7 @@ package Math::Interpolator::Knot;
 use warnings;
 use strict;
 
-our $VERSION = "0.000";
+our $VERSION = "0.001";
 
 use fields qw(x y);
 
@@ -44,7 +44,7 @@ coordinates.
 
 sub new($$$) {
 	my $class = shift;
-	my __PACKAGE__ $self = fields::new($class);
+	my Math::Interpolator::Knot $self = fields::new($class);
 	@{$self}{qw(x y)} = @_;
 	return $self;
 }
@@ -62,7 +62,7 @@ Returns the x coordinate of the knot.
 =cut
 
 sub x($) {
-	my __PACKAGE__ $self = shift;
+	my Math::Interpolator::Knot $self = shift;
 	return $self->{x};
 }
 
@@ -73,7 +73,7 @@ Returns the y coordinate of the knot.
 =cut
 
 sub y($) {
-	my __PACKAGE__ $self = shift;
+	my Math::Interpolator::Knot $self = shift;
 	return $self->{y};
 }
 
@@ -108,7 +108,7 @@ Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006 Andrew Main (Zefram) <zefram@fysh.org>
+Copyright (C) 2006, 2007 Andrew Main (Zefram) <zefram@fysh.org>
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

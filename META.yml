@@ -1,10 +1,10 @@
 # http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         Math-Interpolator
-version:      0.000
+version:      0.001
 version_from: lib/Math/Interpolator.pm
 installdirs:  site
 requires:
 
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30
+generated_by: ExtUtils::MakeMaker version 6.17

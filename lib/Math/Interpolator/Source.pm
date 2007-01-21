@@ -48,7 +48,7 @@ use strict;
 
 use Carp qw(croak);
 
-our $VERSION = "0.000";
+our $VERSION = "0.001";
 
 use fields qw(expander x y);
 
@@ -75,7 +75,7 @@ only to be performed in one direction then a y coordinate is not required.
 
 sub new($$$;$) {
 	my $class = shift;
-	my __PACKAGE__ $self = fields::new($class);
+	my Math::Interpolator::Source $self = fields::new($class);
 	@{$self}{qw(expander x y)} = @_;
 	return $self;
 }
@@ -93,7 +93,7 @@ Returns the representative x coordinate of the source.
 =cut
 
 sub x($) {
-	my __PACKAGE__ $self = shift;
+	my Math::Interpolator::Source $self = shift;
 	return $self->{x};
 }
 
@@ -105,7 +105,7 @@ C<die>s if not.
 =cut
 
 sub y($) {
-	my __PACKAGE__ $self = shift;
+	my Math::Interpolator::Source $self = shift;
 	my $y = $self->{y};
 	croak "no y coordinate for this source" unless defined $y;
 	return $y;
@@ -133,7 +133,7 @@ C<die>s if expansion is presently impossible.
 =cut
 
 sub expand($) {
-	my __PACKAGE__ $self = shift;
+	my Math::Interpolator::Source $self = shift;
 	return $self->{expander}->();
 }
 
@@ -158,7 +158,7 @@ Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006 Andrew Main (Zefram) <zefram@fysh.org>
+Copyright (C) 2006, 2007 Andrew Main (Zefram) <zefram@fysh.org>
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
