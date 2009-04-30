@@ -1,10 +1,44 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Math-Interpolator
-version:      0.001
-version_from: lib/Math/Interpolator.pm
-installdirs:  site
+---
+name: Math-Interpolator
+version: 0.002
+author:
+  - 'Andrew Main (Zefram) <zefram@fysh.org>'
+abstract: interpolate between lazily-evaluated points
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
 requires:
-
+  Carp: 0
+  integer: 0
+  parent: 0
+  perl: 5.006
+  strict: 0
+  warnings: 0
+build_requires:
+  Module::Build: 0
+  Test::More: 0
+  perl: 5.006
+  strict: 0
+  warnings: 0
+dynamic_config: 0
+provides:
+  Math::Interpolator:
+    file: lib/Math/Interpolator.pm
+    version: 0.002
+  Math::Interpolator::Knot:
+    file: lib/Math/Interpolator/Knot.pm
+    version: 0.002
+  Math::Interpolator::Linear:
+    file: lib/Math/Interpolator/Linear.pm
+    version: 0.002
+  Math::Interpolator::Robust:
+    file: lib/Math/Interpolator/Robust.pm
+    version: 0.002
+  Math::Interpolator::Source:
+    file: lib/Math/Interpolator/Source.pm
+    version: 0.002
+generated_by: Module::Build version 0.31012
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17

@@ -29,11 +29,23 @@ package Math::Interpolator::Linear;
 use warnings;
 use strict;
 
-our $VERSION = "0.001";
+our $VERSION = "0.002";
 
-use base qw(Math::Interpolator);
+use parent "Math::Interpolator";
 
-sub conv($$$$) {
+=head1 METHODS
+
+=over
+
+=item $ipl->y(X)
+
+=item $ipl->x(Y)
+
+These methods are part of the standard C<Math::Interpolator> interface.
+
+=cut
+
+sub _conv {
 	my($self, $x_method, $y_method, $x) = @_;
 	my $nhood_method = "nhood_$x_method";
 	my($a, $b) = $self->$nhood_method($x, 1);
@@ -44,15 +56,17 @@ sub conv($$$$) {
 	return $ya + ($x - $xa) * (($yb - $ya) / ($xb - $xa));
 }
 
-sub y($$) {
+sub y {
 	my($self, $x) = @_;
-	return $self->conv("x", "y", $x);
+	return $self->_conv("x", "y", $x);
 }
 
-sub x($$) {
+sub x {
 	my($self, $y) = @_;
-	return $self->conv("y", "x", $y);
+	return $self->_conv("y", "x", $y);
 }
+
+=back
 
 =head1 SEE ALSO
 
@@ -64,7 +78,9 @@ Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006, 2007 Andrew Main (Zefram) <zefram@fysh.org>
+Copyright (C) 2006, 2007, 2009 Andrew Main (Zefram) <zefram@fysh.org>
+
+=head1 LICENSE
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

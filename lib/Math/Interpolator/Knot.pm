@@ -27,9 +27,7 @@ package Math::Interpolator::Knot;
 use warnings;
 use strict;
 
-our $VERSION = "0.001";
-
-use fields qw(x y);
+our $VERSION = "0.002";
 
 =head1 CONSTRUCTOR
 
@@ -42,12 +40,7 @@ coordinates.
 
 =cut
 
-sub new($$$) {
-	my $class = shift;
-	my Math::Interpolator::Knot $self = fields::new($class);
-	@{$self}{qw(x y)} = @_;
-	return $self;
-}
+sub new { bless({ x => $_[1], y => $_[2] }, $_[0]) }
 
 =back
 
@@ -61,10 +54,7 @@ Returns the x coordinate of the knot.
 
 =cut
 
-sub x($) {
-	my Math::Interpolator::Knot $self = shift;
-	return $self->{x};
-}
+sub x { $_[0]->{x} }
 
 =item $pt->y
 
@@ -72,10 +62,7 @@ Returns the y coordinate of the knot.
 
 =cut
 
-sub y($) {
-	my Math::Interpolator::Knot $self = shift;
-	return $self->{y};
-}
+sub y { $_[0]->{y} }
 
 =item $pt->role
 
@@ -84,7 +71,7 @@ types of entity that could appear in an interpolator's point list.
 
 =cut
 
-sub role($) { "KNOT" }
+sub role { "KNOT" }
 
 =back
 
@@ -108,7 +95,9 @@ Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006, 2007 Andrew Main (Zefram) <zefram@fysh.org>
+Copyright (C) 2006, 2007, 2009 Andrew Main (Zefram) <zefram@fysh.org>
+
+=head1 LICENSE
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

@@ -48,9 +48,7 @@ use strict;
 
 use Carp qw(croak);
 
-our $VERSION = "0.001";
-
-use fields qw(expander x y);
+our $VERSION = "0.002";
 
 =head1 CONSTRUCTOR
 
@@ -73,11 +71,13 @@ only to be performed in one direction then a y coordinate is not required.
 
 =cut
 
-sub new($$$;$) {
-	my $class = shift;
-	my Math::Interpolator::Source $self = fields::new($class);
-	@{$self}{qw(expander x y)} = @_;
-	return $self;
+sub new {
+	my($class, $expander, $x, $y) = @_;
+	return bless({
+		expander => $expander,
+		x => $x,
+		y => $y,
+	}, $class);
 }
 
 =back
@@ -92,10 +92,7 @@ Returns the representative x coordinate of the source.
 
 =cut
 
-sub x($) {
-	my Math::Interpolator::Source $self = shift;
-	return $self->{x};
-}
+sub x { $_[0]->{x} }
 
 =item $pt->y
 
@@ -104,8 +101,8 @@ C<die>s if not.
 
 =cut
 
-sub y($) {
-	my Math::Interpolator::Source $self = shift;
+sub y {
+	my($self) = @_;
 	my $y = $self->{y};
 	croak "no y coordinate for this source" unless defined $y;
 	return $y;
@@ -118,7 +115,7 @@ other types of entity that could appear in an interpolator's point list.
 
 =cut
 
-sub role($) { "SOURCE" }
+sub role { "SOURCE" }
 
 =item $pt->expand
 
@@ -132,10 +129,7 @@ C<die>s if expansion is presently impossible.
 
 =cut
 
-sub expand($) {
-	my Math::Interpolator::Source $self = shift;
-	return $self->{expander}->();
-}
+sub expand { $_[0]->{expander}->() }
 
 =back
 
@@ -158,7 +152,9 @@ Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006, 2007 Andrew Main (Zefram) <zefram@fysh.org>
+Copyright (C) 2006, 2007, 2009 Andrew Main (Zefram) <zefram@fysh.org>
+
+=head1 LICENSE
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

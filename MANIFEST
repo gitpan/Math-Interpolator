@@ -1,4 +1,5 @@
 .cvsignore
+Build.PL
 Changes
 MANIFEST
 META.yml
@@ -12,8 +13,11 @@ lib/Math/Interpolator/Source.pm
 t/edge.t
 t/nhood.t
 t/null.t
+t/pod_cvg.t
+t/pod_syn.t
 t/ppro.t
 t/proto.t
 t/robust.t
 t/simple.t
 t/xy.t
+SIGNATURE    Added here by Module::Build
