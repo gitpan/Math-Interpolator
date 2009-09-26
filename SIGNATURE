@@ -15,18 +15,19 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 8694126d9125afbafb2511afe6fe6b36c4a7e0d5 .cvsignore
-SHA1 39471c7994d0f5127a7f441fb8ba6fbdd9567ba3 Build.PL
-SHA1 e461aef7d169a2ad78c01175596c6e1505e25d22 Changes
-SHA1 760ca20b582db8d6f6b1333844d0baa2bd360aee MANIFEST
-SHA1 c946ee496f4e44fe6096f1f237d33eb2a5ea3125 META.yml
+SHA1 5a30eb348da452a11a4b3540046f468fff6827e3 Build.PL
+SHA1 c4896ca2f4514c0610c031eb6303ce8b3ddae427 Changes
+SHA1 b0ffd939779a1e9ab359171b1d5bc6b6927bb36a MANIFEST
+SHA1 d54f87ad95100e1c2aae4de965fdc9692fe47cf0 META.yml
 SHA1 f39315b8e83202006e8a916c6a58725d104f75ec Makefile.PL
 SHA1 b6750fa6d1d937d11e140e9ff2c4818130fc591a README
-SHA1 d135ce084a01014b4a99b1d4c62bb66391d1576c lib/Math/Interpolator.pm
-SHA1 36ce36173baac0bddb7fa0597f69e7b72ca3315e lib/Math/Interpolator/Knot.pm
-SHA1 33b54d7d370895e1af930a180e8e7847ace9e206 lib/Math/Interpolator/Linear.pm
-SHA1 e9a009d9bce9abf3dc55c19442acf8fdad391598 lib/Math/Interpolator/Robust.pm
-SHA1 34daeabb742cab46c85c464bbc37585b045faeb8 lib/Math/Interpolator/Source.pm
+SHA1 94b53b096d584ad539aa1454225277720c4054f1 lib/Math/Interpolator.pm
+SHA1 7c11fbb887c2d145fcf9bb799af814d224c749b4 lib/Math/Interpolator/Knot.pm
+SHA1 4ddc98b7b0e77049cc665e07eee1b09845914ad9 lib/Math/Interpolator/Linear.pm
+SHA1 54ccd20a9031866ea5250d498f3979ac469e1001 lib/Math/Interpolator/Robust.pm
+SHA1 b7f383917cf7fff1fd0a052517ea34841adf1b72 lib/Math/Interpolator/Source.pm
 SHA1 1e0c32306ba324171124bb0ddb6820d05ef7cd6b t/edge.t
+SHA1 5d67a41388e2c0ef3ce581e5fe9efa217221d59b t/fraction.t
 SHA1 442550c1407104ef915545dca7a1ed24484d382f t/nhood.t
 SHA1 b943d5d5b44da1fde95d122153222fcd6ccde941 t/null.t
 SHA1 0e141eecf3ca4903ef38d9413b5403a9ddb0392f t/pod_cvg.t
@@ -39,7 +40,7 @@ SHA1 81179bfb223227f3639154d0912c35ac886ce802 t/xy.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.9 (GNU/Linux)
 
-iEYEARECAAYFAkn578AACgkQOV9mt2VyAVGHUwCgqHFIjz7kqxHC9dlho6glUGPh
-DkUAn1KqgEN5O4Hr7TzOPSukvwHqtz9W
-=sGzV
+iEYEARECAAYFAkq+StEACgkQOV9mt2VyAVGGjQCeKws2PK4/yGkGzsSg5rhwUqMi
+RXoAn0kc5zdBqosEkAFeWc7+bK5490Lc
+=WS4a
 -----END PGP SIGNATURE-----

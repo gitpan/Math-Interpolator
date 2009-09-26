@@ -1,3 +1,10 @@
+version 0.003; 2009-09-26
+
+  * bugfix: avoid wrongly truncating floating-point x values to integer
+    for comparison in the binary search
+
+  * remove bogus "exit 0" from Build.PL
+
 version 0.002; 2009-04-30
 
   * document standard Math::Interpolator methods in M::I::Linear and

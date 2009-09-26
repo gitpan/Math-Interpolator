@@ -11,6 +11,7 @@ lib/Math/Interpolator/Linear.pm
 lib/Math/Interpolator/Robust.pm
 lib/Math/Interpolator/Source.pm
 t/edge.t
+t/fraction.t
 t/nhood.t
 t/null.t
 t/pod_cvg.t

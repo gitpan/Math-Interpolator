@@ -34,7 +34,7 @@ package Math::Interpolator::Robust;
 use warnings;
 use strict;
 
-our $VERSION = "0.002";
+our $VERSION = "0.003";
 
 use parent "Math::Interpolator";
 

@@ -1,6 +1,6 @@
 ---
 name: Math-Interpolator
-version: 0.002
+version: 0.003
 author:
   - 'Andrew Main (Zefram) <zefram@fysh.org>'
 abstract: interpolate between lazily-evaluated points
@@ -24,19 +24,19 @@ dynamic_config: 0
 provides:
   Math::Interpolator:
     file: lib/Math/Interpolator.pm
-    version: 0.002
+    version: 0.003
   Math::Interpolator::Knot:
     file: lib/Math/Interpolator/Knot.pm
-    version: 0.002
+    version: 0.003
   Math::Interpolator::Linear:
     file: lib/Math/Interpolator/Linear.pm
-    version: 0.002
+    version: 0.003
   Math::Interpolator::Robust:
     file: lib/Math/Interpolator/Robust.pm
-    version: 0.002
+    version: 0.003
   Math::Interpolator::Source:
     file: lib/Math/Interpolator/Source.pm
-    version: 0.002
+    version: 0.003
 generated_by: Module::Build version 0.31012
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

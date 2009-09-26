@@ -34,7 +34,7 @@ use strict;
 
 use Carp qw(croak);
 
-our $VERSION = "0.002";
+our $VERSION = "0.003";
 
 =head1 CONSTRUCTOR
 
@@ -118,8 +118,7 @@ sub _nhood {
 	my $max = @$self - 1;
 	BINSEARCH:
 	while($max != $min + 1) {
-		use integer;
-		my $try = ($min + $max) / 2;
+		my $try = do { use integer; ($min + $max) / 2 };
 		if($x >= $self->[$try]->$x_method) {
 			$min = $try;
 		} else {
