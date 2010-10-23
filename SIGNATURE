@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.55.
+signed via the Module::Signature module, version 0.66.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,33 +14,33 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 8694126d9125afbafb2511afe6fe6b36c4a7e0d5 .cvsignore
-SHA1 5a30eb348da452a11a4b3540046f468fff6827e3 Build.PL
-SHA1 c4896ca2f4514c0610c031eb6303ce8b3ddae427 Changes
+SHA1 74fc2de0f90a234b5ec73c1ff0f92203eed6f3f6 .cvsignore
+SHA1 de5bcb7c6cf13d5a9eaef0719ee4429f3f46ef02 Build.PL
+SHA1 ffae38813961fb32a4b10703bd1a791db51e84ac Changes
 SHA1 b0ffd939779a1e9ab359171b1d5bc6b6927bb36a MANIFEST
-SHA1 d54f87ad95100e1c2aae4de965fdc9692fe47cf0 META.yml
-SHA1 f39315b8e83202006e8a916c6a58725d104f75ec Makefile.PL
-SHA1 b6750fa6d1d937d11e140e9ff2c4818130fc591a README
-SHA1 94b53b096d584ad539aa1454225277720c4054f1 lib/Math/Interpolator.pm
-SHA1 7c11fbb887c2d145fcf9bb799af814d224c749b4 lib/Math/Interpolator/Knot.pm
-SHA1 4ddc98b7b0e77049cc665e07eee1b09845914ad9 lib/Math/Interpolator/Linear.pm
-SHA1 54ccd20a9031866ea5250d498f3979ac469e1001 lib/Math/Interpolator/Robust.pm
-SHA1 b7f383917cf7fff1fd0a052517ea34841adf1b72 lib/Math/Interpolator/Source.pm
-SHA1 1e0c32306ba324171124bb0ddb6820d05ef7cd6b t/edge.t
-SHA1 5d67a41388e2c0ef3ce581e5fe9efa217221d59b t/fraction.t
-SHA1 442550c1407104ef915545dca7a1ed24484d382f t/nhood.t
-SHA1 b943d5d5b44da1fde95d122153222fcd6ccde941 t/null.t
-SHA1 0e141eecf3ca4903ef38d9413b5403a9ddb0392f t/pod_cvg.t
-SHA1 74a957cd8b93f25672ecc6aa578a671d084dd343 t/pod_syn.t
-SHA1 45029086e97139f1197a732bace9ef1d000318af t/ppro.t
-SHA1 ea49bf3826c26a13cf37d35054e50d08e23fc2b5 t/proto.t
-SHA1 f274b09bcba30b2192fd1baf3a01b10e673fc279 t/robust.t
-SHA1 c08ef1eab3cdd690270feb7cccd38de12f3ff9fa t/simple.t
-SHA1 81179bfb223227f3639154d0912c35ac886ce802 t/xy.t
+SHA1 94c13f8ac774bde962335f4097c224ef88d988dd META.yml
+SHA1 caae608231ffe78390c76451ade51a7cfc87a9f9 Makefile.PL
+SHA1 e884b38d531f9107ddde82597aa0b560729138c0 README
+SHA1 32460d2a07012b1d26c23413a9359ebbc7f1627d lib/Math/Interpolator.pm
+SHA1 7a8ee45688ffc51c4516923f34b8c4b0c6b621dc lib/Math/Interpolator/Knot.pm
+SHA1 a282d7aa591b2c60dd866814d7c90b47cdac6836 lib/Math/Interpolator/Linear.pm
+SHA1 ee1f804b7d8f8fbc9fcbf4091c4e1ec24656cdf6 lib/Math/Interpolator/Robust.pm
+SHA1 8be12da5e89c292a6d3805df0b154fa36da2fefd lib/Math/Interpolator/Source.pm
+SHA1 d21752a69d401b824a7545d798f1189df00c2d8f t/edge.t
+SHA1 5e0578a58172f8048dcf02a642527f8bc433ae5f t/fraction.t
+SHA1 aff6ddc861cdd14427ed340b0e1287e4712ad1fd t/nhood.t
+SHA1 1592c48bc724034f4266d5c827499d0d0c449288 t/null.t
+SHA1 904d9a4f76525e2303e4b0c168c68230f223c8de t/pod_cvg.t
+SHA1 65c75abdef6f01a5d1588a307f2ddfe2333dc961 t/pod_syn.t
+SHA1 193ed5cedc559494595f9cce087e4df198aadb19 t/ppro.t
+SHA1 6697e03894494940fff5fd7830a9695844805cbe t/proto.t
+SHA1 8f2d7eff47ce1a4eea5cde835fdc51651556cc54 t/robust.t
+SHA1 ff2387749ed632dba285995539e0037423119ad0 t/simple.t
+SHA1 a951648123ec19c37030a40037da97b2cf44df43 t/xy.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.9 (GNU/Linux)
 
-iEYEARECAAYFAkq+StEACgkQOV9mt2VyAVGGjQCeKws2PK4/yGkGzsSg5rhwUqMi
-RXoAn0kc5zdBqosEkAFeWc7+bK5490Lc
-=WS4a
+iEYEARECAAYFAkzDTzQACgkQOV9mt2VyAVE4IACgmGDM1E24nQnrHQ9A747LyJz7
+ciAAn18D/LQy2cov+MaP1KAjd0KPBcha
+=zhxd
 -----END PGP SIGNATURE-----

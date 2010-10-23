@@ -1,3 +1,13 @@
+version 0.004; 2010-10-23
+
+  * check for required Perl version at runtime
+
+  * use full stricture in test suite
+
+  * in Build.PL, explicitly declare configure-time requirements
+
+  * add MYMETA.yml to .cvsignore
+
 version 0.003; 2009-09-26
 
   * bugfix: avoid wrongly truncating floating-point x values to integer

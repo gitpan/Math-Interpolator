@@ -1,3 +1,6 @@
+use warnings;
+use strict;
+
 use Test::More tests => 11;
 
 BEGIN { use_ok "Math::Interpolator::Linear"; }
@@ -22,3 +25,5 @@ is $ipl->y(9), 5.75;
 
 eval { $ipl->y(9.5); };
 like $@, qr/\Adata does not extend to x=9\.5 /;
+
+1;

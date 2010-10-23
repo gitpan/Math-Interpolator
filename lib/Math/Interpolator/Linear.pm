@@ -26,10 +26,11 @@ not recommended.
 
 package Math::Interpolator::Linear;
 
+{ use 5.006; }
 use warnings;
 use strict;
 
-our $VERSION = "0.003";
+our $VERSION = "0.004";
 
 use parent "Math::Interpolator";
 
@@ -78,7 +79,8 @@ Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006, 2007, 2009 Andrew Main (Zefram) <zefram@fysh.org>
+Copyright (C) 2006, 2007, 2009, 2010
+Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 LICENSE
 

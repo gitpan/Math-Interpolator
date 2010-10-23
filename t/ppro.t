@@ -1,3 +1,6 @@
+use warnings;
+use strict;
+
 use Test::More tests => 17;
 
 BEGIN { use_ok "Math::Interpolator::Linear"; }
@@ -35,3 +38,5 @@ is $a6_called, 1;
 is $ipl->y(5), 6.5;
 is $a5_called, 1;
 is $a6_called, 1;
+
+1;

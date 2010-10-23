@@ -1,12 +1,42 @@
 ---
-name: Math-Interpolator
-version: 0.003
+abstract: 'interpolate between lazily-evaluated points'
 author:
   - 'Andrew Main (Zefram) <zefram@fysh.org>'
-abstract: interpolate between lazily-evaluated points
+build_requires:
+  Module::Build: 0
+  Test::More: 0
+  perl: 5.006
+  strict: 0
+  warnings: 0
+configure_requires:
+  Module::Build: 0
+  perl: 5.006
+  strict: 0
+  warnings: 0
+distribution_type: module
+dynamic_config: 0
+generated_by: 'Module::Build version 0.3607'
 license: perl
-resources:
-  license: http://dev.perl.org/licenses/
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Math-Interpolator
+provides:
+  Math::Interpolator:
+    file: lib/Math/Interpolator.pm
+    version: 0.004
+  Math::Interpolator::Knot:
+    file: lib/Math/Interpolator/Knot.pm
+    version: 0.004
+  Math::Interpolator::Linear:
+    file: lib/Math/Interpolator/Linear.pm
+    version: 0.004
+  Math::Interpolator::Robust:
+    file: lib/Math/Interpolator/Robust.pm
+    version: 0.004
+  Math::Interpolator::Source:
+    file: lib/Math/Interpolator/Source.pm
+    version: 0.004
 requires:
   Carp: 0
   integer: 0
@@ -14,31 +44,6 @@ requires:
   perl: 5.006
   strict: 0
   warnings: 0
-build_requires:
-  Module::Build: 0
-  Test::More: 0
-  perl: 5.006
-  strict: 0
-  warnings: 0
-dynamic_config: 0
-provides:
-  Math::Interpolator:
-    file: lib/Math/Interpolator.pm
-    version: 0.003
-  Math::Interpolator::Knot:
-    file: lib/Math/Interpolator/Knot.pm
-    version: 0.003
-  Math::Interpolator::Linear:
-    file: lib/Math/Interpolator/Linear.pm
-    version: 0.003
-  Math::Interpolator::Robust:
-    file: lib/Math/Interpolator/Robust.pm
-    version: 0.003
-  Math::Interpolator::Source:
-    file: lib/Math/Interpolator/Source.pm
-    version: 0.003
-generated_by: Module::Build version 0.31012
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
-distribution_type: module
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.004

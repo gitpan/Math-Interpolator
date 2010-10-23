@@ -1,3 +1,6 @@
+use warnings;
+use strict;
+
 use Test::More tests => 20;
 
 BEGIN { use_ok "Math::Interpolator::Linear"; }
@@ -34,3 +37,5 @@ check(4.25, 6.125);
 check(6, 7);
 check(6.5, 7.125);
 check(9, 7.75);
+
+1;

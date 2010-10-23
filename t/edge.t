@@ -1,3 +1,6 @@
+use warnings;
+use strict;
+
 use Test::More tests => 3 + 3*8;
 
 BEGIN { use_ok "Math::Interpolator::Linear"; }
@@ -60,3 +63,5 @@ $ipl = Math::Interpolator::Linear->new(proto(\&a5, 5), pt(7, 8), pt(8, 1));
 is $a5_called, 7;
 is $ipl->y(6.5), 7.5;
 is $a5_called, 8;
+
+1;

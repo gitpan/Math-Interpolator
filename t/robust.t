@@ -1,3 +1,6 @@
+use warnings;
+use strict;
+
 use Test::More tests => 74;
 
 BEGIN { use_ok "Math::Interpolator::Robust"; }
@@ -20,6 +23,8 @@ while(<DATA>) {
 	my($x, $ok_y) = split;
 	is sprintf("%.4f", $ipl->y($x)), $ok_y;
 }
+
+1;
 
 __DATA__
 3.00 5.0000
