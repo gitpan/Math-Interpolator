@@ -13,9 +13,8 @@ configure_requires:
   perl: 5.006
   strict: 0
   warnings: 0
-distribution_type: module
 dynamic_config: 0
-generated_by: 'Module::Build version 0.3607'
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112621'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,19 +23,19 @@ name: Math-Interpolator
 provides:
   Math::Interpolator:
     file: lib/Math/Interpolator.pm
-    version: 0.004
+    version: 0.005
   Math::Interpolator::Knot:
     file: lib/Math/Interpolator/Knot.pm
-    version: 0.004
+    version: 0.005
   Math::Interpolator::Linear:
     file: lib/Math/Interpolator/Linear.pm
-    version: 0.004
+    version: 0.005
   Math::Interpolator::Robust:
     file: lib/Math/Interpolator/Robust.pm
-    version: 0.004
+    version: 0.005
   Math::Interpolator::Source:
     file: lib/Math/Interpolator/Source.pm
-    version: 0.004
+    version: 0.005
 requires:
   Carp: 0
   integer: 0
@@ -46,4 +45,4 @@ requires:
   warnings: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.004
+version: 0.005

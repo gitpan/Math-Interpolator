@@ -28,7 +28,7 @@ package Math::Interpolator::Knot;
 use warnings;
 use strict;
 
-our $VERSION = "0.004";
+our $VERSION = "0.005";
 
 =head1 CONSTRUCTOR
 
@@ -96,7 +96,7 @@ Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006, 2007, 2009, 2010
+Copyright (C) 2006, 2007, 2009, 2010, 2012
 Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 LICENSE
